@@ -1,0 +1,364 @@
+/* #Basic(1)
+================================================== */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+*:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: white;
+	margin: 0 auto;
+}
+.active {
+	color: #c20000 !important;
+}
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	pointer-events: visible;
+}
+article, aside, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+a, a:visited {
+	cursor: pointer;
+	text-decoration: none;
+	outline: 0;
+	color: inherit;
+	transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+}
+img, object, embed {
+	max-width: 100%;
+	border: none
+}
+/* #HEADER(2)
+================================================== */
+#header, #about {
+	width: 100%;
+	height: auto;
+}
+#team {
+	height: 800px;
+}
+.logo {
+	background: #fff;
+	width: 100%;
+	height: 80px;
+}
+.logo img {
+	width: 200px;
+	height: auto;
+	padding: 14px 30px;
+}
+.menu {
+	background: #9bb3d4;
+	width: 100%;
+	height: 100px;
+}
+.menu li {
+	display: inline-block;
+	margin: 40px 0 40px 80px;
+}
+.menu li a {
+	font-family: 'Calibri';
+	text-transform: none;
+	text-decoration: none;
+	font-size: 22px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	color: #fff;
+}
+/* #PAGES(3)
+================================================== */
+.block {
+	width: 600px;
+	height: auto;
+	float: left;
+	display: inline;
+	margin: 60px auto;
+}
+.block span {
+	font-family: 'Calibri';
+	text-transform: none;
+	text-decoration: none;
+	color: #c20000;
+	font-size: 22px;
+	line-height: 40px;
+}
+.block:nth-child(2) {
+	margin-top: 90px;
+}
+.block p {
+	font-family: 'Calibri';
+	text-transform: none;
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+	line-height: 30px;
+}
+.block a {
+	font-family: 'Calibri';
+	text-transform: none;
+	text-decoration: none;
+	color: #000;
+	font-size: 17px;
+	line-height: 30px;
+}
+.block img {
+	width: 400px;
+	height: auto;
+	text-align: center;
+}
+.portfolio {
+	text-align: center;
+	width: 100%;
+	height: 300px;
+	border: 4px solid #9bb3d4;
+	margin: 12px 0;
+}
+.portfolio img {
+	text-align: center;
+	width: 80%;
+	margin: 30px 0 0 0;
+}
+.portfolio p {
+	width: 250px;
+	text-align: center;
+	color: #000;
+	font-family: 'Calibri';
+	font-size: 16px;
+	line-height: 20px;
+	list-style: none;
+	padding-left: 55px;
+	padding-bottom: 30px;
+}
+.portfolio a {
+	margin-top: 100px;
+	text-align: center;
+	color: #0020f5;
+	font-family: 'Calibri';
+	font-size: 16px;
+	list-style: none;
+	text-decoration: underline;
+}
+.brinda {
+	background: #c20000 !important;
+	color: #fff  !important;
+	font-size: 16px  !important;
+	width: 100%  !important;
+	padding: 10px 55px  !important;
+	border: 2px solid #000  !important;
+}
+.btn1, .btn2 {
+	width: 250px;
+	text-align: left;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+button ul {
+	background: none;
+	display:none;
+}
+button li {
+	list-style: none;
+	text-align: left;
+	cursor: pointer;
+	width:100%;
+}
+button, .btn1,.btn2, button ul{
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.team-button {
+	width: 50%;
+	height: 40px;
+	background: #c2c2c2;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: 'Calibri';
+	text-align: left;
+	padding: 4px 15px;
+	font-size: 16px;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.active-team {
+	background: #c20000;
+	color: #fff;
+}
+/* #FOOTER(4)
+================================================== */
+#footer {
+	background: #9bb3d4;
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+#footer p {
+	font-family: 'Calibri';
+	text-transform: none;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	line-height: 0px;
+}
+
+/* #RESPONSIVE(5)
+================================================== */
+@media only screen and (min-width: 962px) and (max-width: 1250px) {
+.menu li {
+	display: inline-block;
+	margin: 40px 0 40px 40px;
+}
+.btn1, .btn2 {
+	width: 100%;
+	text-align: left;
+	border: none;
+	background: none;
+	
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.menu li {
+	display: inline-block;
+	margin: 40px 0 40px 25px;
+}
+.menu li a {
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.btn1, .btn2 {
+	width: 100%;
+	text-align: left;
+	border: none;
+	background: none;
+	
+}
+}
+ @media only screen and (max-width: 767px) {
+.logo {
+	background: #fff;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+}
+.logo img {
+	width: 200px;
+	height: auto;
+	padding: 12px;
+}
+.menu {
+	background: #9bb3d4;
+	width: 100%;
+	height: auto;
+}
+.menu li {
+	display: block;
+	margin: 0;
+	text-align: center;
+}
+.menu li a {
+	font-family: 'Calibri';
+	text-transform: none;
+	text-decoration: none;
+	font-size: 22px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	line-height: 34px;
+}
+.block img {
+	width: 100%;
+}
+.block {
+	width: 100%;
+}
+.block:nth-child(2) {
+	margin-top: 24px;
+	margin-bottom: 48px;
+}
+.menu ul {
+	padding: 20px 0;
+}
+
+
+.btn1, .btn2 {
+	width: 100%;
+	text-align: left;
+	border: none;
+	background: none;
+	
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.block {
+	width: 100%;
+}
+.block:nth-child(2) {
+	margin-top: 24px;
+	margin-bottom: 48px;
+}
+.block img {
+	width: 100%;
+}
+.logo {
+	background: #fff;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+}
+.logo img {
+	width: 200px;
+	height: auto;
+	padding: 12px;
+}
+.menu {
+	background: #9bb3d4;
+	width: 100%;
+	height: auto;
+}
+.menu ul {
+	padding: 20px 0;
+}
+.menu li {
+	display: block;
+	margin: 0;
+	text-align: center;
+}
+.menu li a {
+	font-family: 'Calibri';
+	text-transform: none;
+	text-decoration: none;
+	font-size: 22px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	line-height: 34px;
+}
+
+.btn1, .btn2 {
+	width: 100%;
+	text-align: left;
+	border: none;
+	background: none;
+	
+}
+
+}
