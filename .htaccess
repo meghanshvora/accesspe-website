@@ -1,14 +1,9 @@
+FROM php:8.2-apache
 
-RewriteEngine on
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP:X-Forwarded-SSL} !on
-RewriteCond %{HTTP_HOST} ^accesspe\.in$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.accesspe\.in$
-RewriteRule ^/?$ "https\:\/\/accesspe\.in\/" [R=301,L]
+COPY . /var/www/html/
 
-# php -- BEGIN cPanel-generated handler, do not edit
-# Set the “ea-php72” package as the default “PHP” programming language.
-<IfModule mime_module>
-  AddHandler application/x-httpd-ea-php72 .php .php7 .phtml
-</IfModule>
-# php -- END cPanel-generated handler, do not edit
+RUN a2enmod rewrite && \
+    chown -R www-data:www-data /var/www/html && \
+    sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
+
+EXPOSE 80
