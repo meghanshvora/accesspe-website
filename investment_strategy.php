@@ -27,44 +27,44 @@
 	    		<h1 class="respInvPageTitle">Investment Strategy</h1>
     		</div>
     		<div class="row investmentStrategyDiv">
-    			<div class="col-md-3 targetSegmentsTitleHover" data-strategy-card tabindex="0" role="button" aria-expanded="false" aria-controls="strategy-target-details">
+    			<button type="button" class="col-md-3 targetSegmentsTitleHover" data-strategy-card aria-expanded="false" aria-controls="strategy-target-details" aria-labelledby="TargetSegmentsHeading" style="background: transparent; border: 0; padding: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none;">
 	    			<img class="invImage1 img-responsive" id="TargetSegmentsId" src="images/target_segments.svg" alt="">
-	    			<div class="targetSegmentsTitle">Target Segments</div>
+	    			<h3 id="TargetSegmentsHeading" class="targetSegmentsTitle" style="margin: 0; margin-top: 20px;">Target Segments</h3>
 	    			<div class="belowTextTarget display-none" id="strategy-target-details" aria-hidden="true">
 	    				<ul class="listElements">
 	    					<li>Lower mid-market and SME business in India</li>
 	    					<li>Focus on consumer and B2B service segments</li>
 	    				</ul>
 	    			</div>
-	    		</div>
-    			<div class="col-md-3 entrepreneursTitleHover" data-strategy-card tabindex="0" role="button" aria-expanded="false" aria-controls="strategy-entrepreneurs-details">
+	    		</button>
+    			<button type="button" class="col-md-3 entrepreneursTitleHover" data-strategy-card aria-expanded="false" aria-controls="strategy-entrepreneurs-details" aria-labelledby="EntrepreneursHeading" style="background: transparent; border: 0; padding: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none;">
 	    			<img class="invImage2 img-responsive" id="EntrepreneursId" src="images/entrepreneurs.svg" alt="">
-	    			<div class="entrepreneursTitle">Entrepreneurs</div>
+	    			<h3 id="EntrepreneursHeading" class="entrepreneursTitle" style="margin: 0; margin-top: 20px;">Entrepreneurs</h3>
 	    			<div class="belowTextEntrepreneur display-none" id="strategy-entrepreneurs-details" aria-hidden="true">
 	    				<ul class="listElements">
 	    					<li>First-generation professionally qualified</li>
 	    				</ul>
 	    			</div>
-	    		</div>
-    			<div class="col-md-3 investmentSizeTitleHover" data-strategy-card tabindex="0" role="button" aria-expanded="false" aria-controls="strategy-investment-details">
+	    		</button>
+    			<button type="button" class="col-md-3 investmentSizeTitleHover" data-strategy-card aria-expanded="false" aria-controls="strategy-investment-details" aria-labelledby="InvestmentSizeHeading" style="background: transparent; border: 0; padding: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none;">
 	    			<img class="invImage3 img-responsive" id="InvestmentSizeId" src="images/investment_size.svg" alt="">
-	    			<div class="investmentSizeTitle">Investment Size</div>
+	    			<h3 id="InvestmentSizeHeading" class="investmentSizeTitle" style="margin: 0; margin-top: 20px;">Investment Size</h3>
 	    			<div class="belowTextInvestment display-none" id="strategy-investment-details" aria-hidden="true">
 	    				<ul class="listElements">
 	    					<li>Rs 60 crores to Rs 150 crores</li>
 	    					<li>Significant minority stakes</li>
 	    				</ul>
 	    			</div>
-	    		</div>
-    			<div class="col-md-3 holdingPeriodTitleHover" data-strategy-card tabindex="0" role="button" aria-expanded="false" aria-controls="strategy-holding-details">
+	    		</button>
+    			<button type="button" class="col-md-3 holdingPeriodTitleHover" data-strategy-card aria-expanded="false" aria-controls="strategy-holding-details" aria-labelledby="HoldingPeriodHeading" style="background: transparent; border: 0; padding: 0; appearance: none; -webkit-appearance: none; -moz-appearance: none;">
 	    			<img class="invImage4 img-responsive" id="HoldingPeriodId" src="images/holding_period.svg" alt="">
-	    			<div class="holdingPeriodTitle">Holding Period</div>
+	    			<h3 id="HoldingPeriodHeading" class="holdingPeriodTitle" style="margin: 0; margin-top: 20px;">Holding Period</h3>
 	    			<div class="belowTextHolding display-none" id="strategy-holding-details" aria-hidden="true">
 	    				<ul class="listElements">
 	    					<li>3 to 5 years, preferably long-term</li>
 	    				</ul>
 	    			</div>
-	    		</div>
+	    		</button>
     		</div>
     		<!-- <div class="investmentStrategyBlankDiv"></div> -->
 	    	<?php include 'footer.php';?>

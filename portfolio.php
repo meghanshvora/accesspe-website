@@ -25,7 +25,23 @@
 			.flip-card-front { /*background-color: #bbb;*/ color: black; }
 			.flip-card-back { background-color: #CCCBCB; color: white; transform: rotateY(180deg); padding: 20px; }
 			.backFlipTitle{ font-size: 1.302vw; line-height: 40px; font-weight: 600; color: #000; }
-			.backFlipDescription { font-size: 1.302vw; line-height: 1.7vw; font-weight: 400; color: #000; }
+			.backFlipDescription {
+				font-size: 1.302vw;
+				line-height: 1.7vw;
+				font-weight: 400;
+				color: #000;
+				background: transparent;
+				border: 0;
+				padding: 0;
+				margin: 0;
+				display: block; /* keep same layout as the previous div */
+				text-align: left;
+			}
+			.backFlipDescription:focus,
+			.backFlipDescription:focus-visible{
+				outline: 3px solid #FF5C5C;
+				outline-offset: 2px;
+			}
 			.cardLinks, .cardLinks:hover { text-decoration: none; color: #000; }
 			.textCenterData, .webkitTextCenter{ text-align: -webkit-center; /*margin-bottom: 30px;*/ /*margin: 20px 20px 20px 20px;*/ }
 
@@ -84,15 +100,15 @@
 				    		<div class="flip-card" data-flip-card>
 								<div class="flip-card-inner">
 									<div class="flip-card-front">
-										<img class="portfolioImg img-responsive" src="images/portfolio_1.png" alt="Beroe Advantage Procurement logo">
+										<img class="portfolioImg img-responsive" src="images/portfolio_1.png" alt="Beroe Advantage Procurement company logo">
 										<button type="button" class="flipCardToggleBtn" aria-expanded="false" aria-controls="portfolio-card-beroe-details" data-flip-toggle>Details</button>
 									</div>
 									<div class="flip-card-back" id="portfolio-card-beroe-details" aria-hidden="true">
 										<button type="button" class="flipCardCloseBtn" aria-label="Close details" data-flip-close>×</button>
-										<div class="backFlipTitle">Beroe Advantage Procurement</div>
-										<div class="backFlipDescription">Provides market intelligence services tailored for procurement teams globally. <!-- to drive strategic and impactful decision-making processes. --> It serves 250 clients<!--  globally -->, including 80 of the Fortune 500 Companies. Beroe’s LiVE.Ai platform provides procurement intelligence to more than 17,000 companies globally.</div>
+										<h2 class="backFlipTitle">Beroe Advantage Procurement</h2>
+										<button type="button" class="backFlipDescription" aria-label="Show description" data-flip-toggle>Provides market intelligence services tailored for procurement teams globally. <!-- to drive strategic and impactful decision-making processes. --> It serves 250 clients<!--  globally -->, including 80 of the Fortune 500 Companies. Beroe’s LiVE.Ai platform provides procurement intelligence to more than 17,000 companies globally.</button>
 										<div style="margin-top: 12px;">
-											<a class="cardLinks" href="https://www.beroeinc.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Beroe Advantage Procurement (opens in a new tab)">Visit website</a>
+											<a class="cardLinks" href="https://www.beroeinc.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Beroe Advantage Procurement website">Visit website</a>
 										</div>
 									</div>
 								</div>
@@ -108,7 +124,7 @@
 									<div class="flip-card-back" id="portfolio-card-alliance-details" aria-hidden="true">
 										<button type="button" class="flipCardCloseBtn" aria-label="Close details" data-flip-close>×</button>
 										<div class="backFlipTitle">Alliance Insurance Brokers</div>
-										<div class="backFlipDescription">A strong player in B2B insurance broking with a presence in specialty segments and reinsurance broking. It is <!-- prominently  -->positioned as one of the top three players in its segment.</div>
+										<button type="button" class="backFlipDescription" aria-label="Show description" data-flip-toggle>A strong player in B2B insurance broking with a presence in specialty segments and reinsurance broking. It is <!-- prominently  -->positioned as one of the top three players in its segment.</button>
 										<div style="margin-top: 12px;">
 											<a class="cardLinks" href="https://allianceinsurance.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit Alliance Insurance Brokers (opens in a new tab)">Visit website</a>
 										</div>
@@ -131,7 +147,7 @@
 									<div class="flip-card-back" id="portfolio-card-jkshah-details" aria-hidden="true">
 										<button type="button" class="flipCardCloseBtn" aria-label="Close details" data-flip-close>×</button>
 										<div class="backFlipTitle">J.K. Shah</div>
-										<div class="backFlipDescription">J.K. Shah is a dominant market leader in coaching for Chartered Accountancy exams in India. With 90+ branches in India, J.K. Shah contributes to approximately 30% of India’s top merit rankers.</div>
+										<button type="button" class="backFlipDescription" aria-label="Show description" data-flip-toggle>J.K. Shah is a dominant market leader in coaching for Chartered Accountancy exams in India. With 90+ branches in India, J.K. Shah contributes to approximately 30% of India’s top merit rankers.</button>
 										<div style="margin-top: 12px;">
 											<a class="cardLinks" href="https://www.jkshahclasses.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit J.K. Shah (opens in a new tab)">Visit website</a>
 										</div>
@@ -149,7 +165,7 @@
 									<div class="flip-card-back" id="portfolio-card-nobel-details" aria-hidden="true">
 										<button type="button" class="flipCardCloseBtn" aria-label="Close details" data-flip-close>×</button>
 										<div class="backFlipTitle">Nobel Hygiene:</div>
-										<div class="backFlipDescription">Nobel Hygiene introduced the concept of adult diapers in India and is the market leader in this segment. It owns the brands ‘Friends,’ the dominant brand in adult diapers, and ‘Teddy,’ the largest Indian-owned label in baby diapers. It also exports its products to 20+ countries.</div>
+										<button type="button" class="backFlipDescription" aria-label="Show description" data-flip-toggle>Nobel Hygiene introduced the concept of adult diapers in India and is the market leader in this segment. It owns the brands ‘Friends,’ the dominant brand in adult diapers, and ‘Teddy,’ the largest Indian-owned label in baby diapers. It also exports its products to 20+ countries.</button>
 										<div style="margin-top: 12px;">
 											<a class="cardLinks" href="https://www.nobelhygiene.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Nobel Hygiene (opens in a new tab)">Visit website</a>
 										</div>
@@ -172,7 +188,7 @@
 									<div class="flip-card-back" id="portfolio-card-teleysia-details" aria-hidden="true">
 										<button type="button" class="flipCardCloseBtn" aria-label="Close details" data-flip-close>×</button>
 										<div class="backFlipTitle">Teleysia Networks</div>
-										<div class="backFlipDescription">A prominent service provider for telecom operators, it is one of India’s leading businesses in RF optimization for telecom networks.</div>
+										<button type="button" class="backFlipDescription" aria-label="Show description" data-flip-toggle>A prominent service provider for telecom operators, it is one of India’s leading businesses in RF optimization for telecom networks.</button>
 										<div style="margin-top: 12px;">
 											<a class="cardLinks" href="https://teleysia.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Teleysia Networks (opens in a new tab)">Visit website</a>
 										</div>

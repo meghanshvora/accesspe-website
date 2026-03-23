@@ -2,7 +2,23 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"><!-- do not disable zoom -->
-    <title>Access India Partners LLP</title>
+    <?php
+        // Used across the templates to set active nav state and accessibility attributes.
+        $isMobile = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"] ?? ''), "mobile"));
+        $current_page = basename($_SERVER['PHP_SELF'] ?? '');
+
+        $pageTitleMap = [
+            'index.php' => 'Home | Access Private Equity',
+            'about_us.php' => 'About Us | Access Private Equity',
+            'investment_strategy.php' => 'Investment Strategy | Access Private Equity',
+            'team.php' => 'Team | Access Private Equity',
+            'portfolio.php' => 'Portfolio | Access Private Equity',
+            'responsible_investing.php' => 'Responsible Investing | Access Private Equity',
+            'contact_us.php' => 'Contact Us | Access Private Equity',
+        ];
+        $pageTitle = $pageTitleMap[$current_page] ?? 'Access Private Equity';
+    ?>
+    <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?></title>
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -24,9 +40,6 @@
     <script src="js/swiper-bundle.min.js"></script>
 
     <?php 
-	    $isMobile = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
-    	$current_page = basename($_SERVER['PHP_SELF']);
-    	
         $aboutUsActive = $investmentStrategyActive = $teamActive = $portfolioActive = $responsibleInvestingActive = $contactUsActive = ""; 
         if($current_page == 'about_us.php'){
             $aboutUsActive = 'active_menu';
@@ -67,7 +80,7 @@
 
 
 	<div class="headerMenu">
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main navigation">
 		    <a class="navbar-brand" href="index.php"><img class="logoImage" src="images/logo.png" alt="Access Private Equity"></a>
 	        
 	        <button class="navbar-toggler navbarTogglerMobileBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,12 +89,12 @@
 		    
 		    <div class="<?php echo $floatClass; ?> collapse navbar-collapse" id="navbarToggler">
 		        <ul class="navbar-nav mr-auto" id="mainNav">
-		            <li class="nav-item"><a class="nav-link <?php echo $aboutUsActive; ?>" href="about_us.php">ABOUT US</a></li>
-		            <li class="nav-item"><a class="nav-link <?php echo $investmentStrategyActive; ?>" href="investment_strategy.php">INVESTMENT STRATEGY</a></li>
-		            <li class="nav-item"><a class="nav-link <?php echo $teamActive; ?>" href="team.php">TEAM</a></li>
-		            <li class="nav-item"><a class="nav-link <?php echo $portfolioActive; ?>" href="portfolio.php">PORTFOLIO</a></li>
+		            <li class="nav-item"><a class="nav-link <?php echo $aboutUsActive; ?>" href="about_us.php"<?php echo $aboutUsActive ? ' aria-current="page"' : ''; ?>>ABOUT US</a></li>
+		            <li class="nav-item"><a class="nav-link <?php echo $investmentStrategyActive; ?>" href="investment_strategy.php"<?php echo $investmentStrategyActive ? ' aria-current="page"' : ''; ?>>INVESTMENT STRATEGY</a></li>
+		            <li class="nav-item"><a class="nav-link <?php echo $teamActive; ?>" href="team.php"<?php echo $teamActive ? ' aria-current="page"' : ''; ?>>TEAM</a></li>
+		            <li class="nav-item"><a class="nav-link <?php echo $portfolioActive; ?>" href="portfolio.php"<?php echo $portfolioActive ? ' aria-current="page"' : ''; ?>>PORTFOLIO</a></li>
 		            <!-- <li class="nav-item"><a class="nav-link <?php //echo $responsibleInvestingActive; ?>" href="responsible_investing.php">RESPONSIBLE INVESTING</a></li> -->
-		            <li class="nav-item"><a class="nav-link <?php echo $contactUsActive; ?>" href="contact_us.php">CONTACT US</a></li>
+		            <li class="nav-item"><a class="nav-link <?php echo $contactUsActive; ?>" href="contact_us.php"<?php echo $contactUsActive ? ' aria-current="page"' : ''; ?>>CONTACT US</a></li>
 		        </ul>
 		    </div>
 		</nav>

@@ -2,6 +2,7 @@
 <html lang="en">
 	<?php include 'head.php'; ?>
 	<style type="text/css">
+		.homePageText{ color: black; }
 	<?php if($isMobile){ ?>
 		.homePageText{ font-size: 40px; letter-spacing: 0px;}
 	<?php }else{ ?>
@@ -18,9 +19,9 @@
 	    <div class="containerMain" id="main-content">
 	    	<h1 class="homePageText">Investing today in market<br>leaders of tomorrow</h1>
 	    	<?php if($isMobile){ ?>
-		    	<img class="bannerImg img-responsive" src="images/home_banner_mobile.png" alt="">
+		    	<img class="bannerImg img-responsive" src="images/home_banner_mobile.png" alt="Access Private Equity home page banner">
 		    <?php }else{ ?>
-		    	<img class="bannerImg img-responsive" src="images/banner.png" alt="">
+		    	<img class="bannerImg img-responsive" src="images/banner.png" alt="Access Private Equity home page banner">
 			<?php } ?>	
 	    	<?php include 'footer.php';?>
 	    </div>

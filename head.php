@@ -2,7 +2,23 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"><!-- do not disable zoom -->
-    <title>Access India Partners LLP</title>
+    <?php
+        // Used across the templates to set active nav state and accessibility attributes.
+        $isMobile = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"] ?? ''), "mobile"));
+        $current_page = basename($_SERVER['PHP_SELF'] ?? '');
+
+        $pageTitleMap = [
+            'index.php' => 'Home | Access Private Equity',
+            'about_us.php' => 'About Us | Access Private Equity',
+            'investment_strategy.php' => 'Investment Strategy | Access Private Equity',
+            'team.php' => 'Team | Access Private Equity',
+            'portfolio.php' => 'Portfolio | Access Private Equity',
+            'responsible_investing.php' => 'Responsible Investing | Access Private Equity',
+            'contact_us.php' => 'Contact Us | Access Private Equity',
+        ];
+        $pageTitle = $pageTitleMap[$current_page] ?? 'Access Private Equity';
+    ?>
+    <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES, 'UTF-8'); ?></title>
 
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
@@ -19,9 +35,6 @@
     <script src="js/swiper-bundle.min.js"></script>
 
     <?php 
-	    $isMobile = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
-    	$current_page = basename($_SERVER['PHP_SELF']);
-    	
         $aboutUsActive = $investmentStrategyActive = $teamActive = $portfolioActive = $responsibleInvestingActive = $contactUsActive = ""; 
         if($current_page == 'about_us.php'){
             $aboutUsActive = 'active_menu';

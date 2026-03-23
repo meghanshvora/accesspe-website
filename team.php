@@ -39,7 +39,7 @@
 		    <hr class="hr_upper_team" aria-hidden="true" role="presentation">
 	    	
 	    	<div class="row text-center">
-		    	<div class="col-md-12 teamHeaderSubText">Founders</div>
+		    	<h2 class="col-md-12 teamHeaderSubText">Founders</h2>
 		    	<div class="col-md-12 teamSubContent">Access was founded by Nilesh Mehta and Sangeeta Modi in 2011. They have a combined experience of over 65 years in Indian small-cap and mid-cap debt and equity investments.</div>
 	    	</div>
 

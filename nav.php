@@ -1,6 +1,6 @@
 <div class="headerMenu">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="Main navigation">
-	    <a class="navbar-brand" href="index.php" aria-label="Access Private Equity, home"<?php echo ($current_page == 'index.php') ? ' aria-current="page"' : ''; ?>><img class="logoImage" src="images/logo.png" alt=""></a>
+	    <a class="navbar-brand" href="index.php" aria-label="Access Private Equity, home"<?php echo ($current_page == 'index.php') ? ' aria-current="page"' : ''; ?>><img class="logoImage" src="images/logo.png" alt="Access Private Equity logo"></a>
         
         <button class="navbar-toggler navbarTogglerMobileBtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Open main menu">
 
